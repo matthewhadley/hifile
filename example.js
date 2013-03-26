@@ -4,8 +4,8 @@ var fs = require('fs'),
     hifile = require('./index.js'),
     head = '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">\
 <title>hifile</title><style>body {margin: 0}</style>\
-<link rel="stylesheet" type="text/css" href="hifile.css">\
-<script src="hifile.js" type="text/javascript"></script></head>\
+<link rel="stylesheet" type="text/css" href="/assets/hifile.css">\
+<script src="/assets/hifile.js" type="text/javascript"></script></head>\
 <script>window.onload = function(){hifile.init()};</script><body>',
   foot = '</body></html>',
   code,
