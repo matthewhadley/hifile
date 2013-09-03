@@ -1,6 +1,6 @@
 {
   "name": "hifile",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "generate markup for highlight.js file viewer",
   "main": "index.js",
   "dependencies": {
@@ -17,8 +17,7 @@
     "file",
     "viewer"
   ],
-  "author": "Matt Hadley <matthew.hadley@gmail.com>",
+  "author": "Matthew Hadley <matthew.hadley@gmail.com>",
   "license": "MIT",
-  "gitHead": "ed920e5f252fc08bb77a9e600eb4d7d689c3f14a",
   "readmeFilename": "README.md"
 }

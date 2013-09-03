@@ -9,12 +9,18 @@ var fs = require('fs'),
 <script>window.onload = function(){hifile.init()};</script><body>',
   foot = '</body></html>',
   code,
-  input = 'index.js',
+  input = './index.js',
   output = 'example.html';
 
-
+// comment
 console.log('parsing', input);
-code = fs.readFileSync(path.join(__dirname, input), 'utf8'),
+code = fs.readFileSync(input, 'utf8');
 code = hifile(code, path.extname(input).substring(1));
+/*
+multi line
+comment
+
+here
+*/
 console.log('writing', output);
 fs.writeFileSync(path.join(__dirname, output), head+code+foot);
