@@ -2,7 +2,8 @@ var hl = require('highlight.js'),
     // map file extensions to highlight.js languages
     exts = {
       'js' : 'javascript',
-      'sh' : 'bash'
+      'sh' : 'bash',
+      'md' : 'markdown'
     };
 
 /* attempt to fix multiline comments by adding extra spans */
@@ -30,9 +31,13 @@ function multiLineComments(match) {
 module.exports = function hifile(str, ext) {
   var lines, col = '', ln;
   ext = exts[ext] || ext;
-  if (ext) {
-    code = hl.highlight(exts[ext] || ext, str);
-  } else {
+  try {
+    if (ext) {
+      code = hl.highlight(exts[ext] || ext, str);
+    } else {
+      code = hl.highlightAuto(str);
+    }
+  } catch (e) {
     code = hl.highlightAuto(str);
   }
   code.value = code.value.replace(/<span class="comment">(.|\n)+?<\/span>/gm, multiLineComments);
