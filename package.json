@@ -1,10 +1,10 @@
 {
   "name": "hifile",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "generate markup for highlight.js file viewer",
   "main": "index.js",
   "dependencies": {
-    "highlight.js": "~7.3.0"
+    "highlight.js": "^8.0.0"
   },
   "devDependencies": {},
   "repository": {

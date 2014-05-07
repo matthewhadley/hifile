@@ -1,6 +1,7 @@
 /* usage: attach hifile.init() to winow onload event */
 var hifile = (function(){
-  var curhl;
+  'use strict';
+  var curhl = {};
   return {
     init : function() {
       var hl;
@@ -11,17 +12,21 @@ var hifile = (function(){
       document.getElementById('col').addEventListener("click", hifile.update);
     },
     highlight : function(hl){
-      var el = document.getElementById('H'+hl);
-      if(el) {
-        el.className += " hl";
-        curhl = el;
+      var col = document.getElementById('L'+hl);
+      var line = document.getElementById('H'+hl);
+      if(col) {
+        col.className += " hl";
+        line.className += " hl";
+        curhl.col = col;
+        curhl.line = line;
       }
     },
     update : function (e) {
       var hash, hl;
       e.preventDefault();
       if(curhl) {
-        curhl.className = "cl";
+        curhl.line.className = "cl";
+        curhl.col.className = "ln";
       }
       hl = e.target.innerText;
       hifile.highlight(hl);

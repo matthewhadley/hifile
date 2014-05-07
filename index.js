@@ -1,16 +1,19 @@
-var hl = require('highlight.js'),
-    // map file extensions to highlight.js languages
-    exts = {
-      'js' : 'javascript',
-      'sh' : 'bash',
-      'md' : 'markdown'
-    };
+'use strict';
+
+var hl = require('highlight.js');
+// map file extensions to highlight.js languages
+var exts = {
+  'js' : 'javascript',
+  'sh' : 'bash',
+  'md' : 'markdown'
+};
 
 /* attempt to fix multiline comments by adding extra spans */
 function multiLineComments(match) {
-  var ret = match,
-      lines = match.split("\n"),
-      ln = lines.length, i;
+  var ret = match;
+  var lines = match.split("\n");
+  var ln = lines.length, i;
+
   if(ln > 1){
     for (i = 0; i < ln; i++) {
       if(i === 0) {
@@ -29,7 +32,7 @@ function multiLineComments(match) {
 }
 
 module.exports = function hifile(str, ext) {
-  var lines, col = '', ln;
+  var code, lines, col = '', ln;
   ext = exts[ext] || ext;
   try {
     if (ext) {
@@ -44,9 +47,9 @@ module.exports = function hifile(str, ext) {
   lines = code.value.split("\n");
   lines.forEach(function(line, i, arr){
     ln = i + 1;
-    arr[i] = '<div class="cl" id="H'+ln+'">'+arr[i]+'</div>';
-    col = col + '<div class="ln"><a id="L'+ln+'" href="#L'+ln+'">'+ln+'</a></div>';
+    arr[i] = '<div id="H'+ln+'" class="cl">'+arr[i]+'</div>';
+    col = col + '<div id="L'+ln+'" class="ln"><a href="#L'+ln+'">'+ln+'</a></div>';
   });
   code = lines.join("\n");
-  return '<div id="hifile"><div id="col">'+col+'</div><div id="code">'+code+'</div></div>';
+  return '<div class="hifile hljs"><div id="col">'+col+'</div><div id="code">'+code+'</div></div>';
 };
