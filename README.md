@@ -13,8 +13,10 @@ var markup = hifile(str, 'js');
 
 Presentation and behaviour are provided via `assets/hifile.css` and `assets/hifile.js` with
 one of the `assets/hljs-theme-*.css` for highlight theming; when served to the browser
-with the markup, line numbers and line highlighting will be available. The end result should look something like:
+with the markup, line numbers and line highlighting will be available.
+
+Check out some live example output on [rawgit.com](https://cdn.rawgit.com/diffsky/hifile/f365ffb96005bc8c8f4828edeb136a96cf691490/example/hifile.html#L12)
+
+Or here is a screenshot of the same file using a different theme:
 
 ![hifile output](https://raw.github.com/wiki/diffsky/hifile/screenshot.jpg)
-
-`example/hifile.html` demonstrates hifile output and can be generated via `node example`
