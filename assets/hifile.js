@@ -24,9 +24,9 @@ var hifile = (function(){
     update : function (e) {
       var hash, hl;
       e.preventDefault();
-      if(curhl) {
-        curhl.line.className = "cl";
+      if(curhl.col) {
         curhl.col.className = "ln";
+        curhl.line.className = "cl";
       }
       hl = e.target.innerText;
       hifile.highlight(hl);
