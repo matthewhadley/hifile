@@ -7,7 +7,7 @@ var hifile = require('..');
 var head = '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">\
 <title>hifile</title><style>body {margin: 0}</style>\
 <link rel="stylesheet" type="text/css" href="/assets/hifile.css">\
-<link rel="stylesheet" type="text/css" href="/assets/hljs-theme-original.css">\
+<link rel="stylesheet" type="text/css" href="/assets/hljs-theme-solarized-dark.css">\
 <script src="/assets/hifile.js" type="text/javascript"></script></head>\
 <script>window.onload = function(){hifile.init()};</script><body>';
 var foot = '</body></html>';
