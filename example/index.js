@@ -10,7 +10,7 @@ var head = '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">\
 <link rel="stylesheet" type="text/css" href="../assets/css/hifile.css">\
 <link rel="stylesheet" type="text/css" href="../assets/css/hljs-theme-solarized-dark.css">\
 <script src="../assets/js/hifile.js"></script>\
-<script>window.onload = function(){hifile.init()};</script></head><body>';
+</head><body>';
 var foot = '</body></html>';
 var code;
 var input = './index.js';
@@ -27,4 +27,4 @@ comment
 here
 */
 console.log('writing example/' + output);
-fs.writeFileSync(path.join(__dirname, output), head+code+foot);
+fs.writeFileSync(path.join(__dirname, output), head + code + foot);
