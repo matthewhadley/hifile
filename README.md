@@ -21,4 +21,4 @@ When served to the browser with the markup, line numbers and line highlighting w
 
 Check out some example output on [rawgit.com](https://cdn.rawgit.com/diffsky/hifile/f365ffb96005bc8c8f4828edeb136a96cf691490/example/hifile.html#L12).
 
-![hifile output](https://raw.githubusercontent.com/diffsky/hifile/example/file.png)
+![hifile output](https://raw.githubusercontent.com/diffsky/hifile/master/example/file.png)
