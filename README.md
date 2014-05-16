@@ -2,6 +2,10 @@
 
 Generate file viewer markup for highlighted strings from [highlight.js](https://github.com/isagalaev/highlight.js)
 
+![hifile output](https://raw.githubusercontent.com/diffsky/hifile/master/example/file.png)
+
+Live demo of example output [available on rawgit.com](https://cdn.rawgit.com/diffsky/hifile/b6488b27775794dabafa508a17ed2b4cf2f69bc2/example/hifile.html#L12).
+
 ## Usage
 
 ```
@@ -18,7 +22,3 @@ Presentation and behaviour are provided via:
 - `assets/css/hljs-theme-*.css` for highlight theming
 
 When served to the browser with the markup, line numbers and line highlighting will be available.
-
-Check out some example output on [rawgit.com](https://cdn.rawgit.com/diffsky/hifile/f365ffb96005bc8c8f4828edeb136a96cf691490/example/hifile.html#L12).
-
-![hifile output](https://raw.githubusercontent.com/diffsky/hifile/master/example/file.png)
