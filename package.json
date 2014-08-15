@@ -1,12 +1,22 @@
 {
   "name": "hifile",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "generate markup for highlight.js file viewer",
   "main": "index.js",
+  "scripts": {
+    "test": "alias gulp='node_modules/gulp/bin/gulp.js' && gulp beautify && gulp eslint",
+    "beautify": "node_modules/gulp/bin/gulp.js beautify --write"
+  },
   "dependencies": {
     "highlight.js": "^8.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-jsbeautifier": "0.0.2",
+    "gulp-eslint": "^0.1.8",
+    "gulp-diff": "^0.1.4",
+    "gulp": "^3.8.7",
+    "minimist": "^1.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/diffsky/hifile.git"
