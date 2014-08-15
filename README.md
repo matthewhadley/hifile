@@ -1,4 +1,4 @@
-# hifile
+# hifile [![](https://travis-ci.org/diffsky/hifile.svg)](https://travis-ci.org/diffsky/hifile)
 
 Generate file viewer markup for highlighted strings from [highlight.js](https://github.com/isagalaev/highlight.js)
 
