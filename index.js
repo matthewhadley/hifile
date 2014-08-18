@@ -12,8 +12,8 @@ var exts = {
 function multiLineComments(match) {
   var ret = match;
   var lines = match.split('\n');
-  var ln = lines.length,
-    i;
+  var ln = lines.length;
+  var i;
 
   if (ln > 1) {
     for (i = 0; i < ln; i++) {
