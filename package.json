@@ -1,6 +1,6 @@
 {
   "name": "hifile",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "generate markup for highlight.js file viewer",
   "main": "index.js",
   "scripts": {
@@ -30,20 +30,13 @@
     "file",
     "viewer"
   ],
-  "author": "",
-  "license": "UNLICENSED",
+  "author": "Matthew Hadley <matthew.hadley@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/diffsky/hifile/issues"
   },
   "homepage": "https://github.com/diffsky/hifile#readme",
-  "directories": {
-    "example": "example"
-  },
   "eslintConfig": {
     "extends": "semistandard"
-  },
-  "files": [
-    "index.js",
-    "assets"
-  ]
+  }
 }
