@@ -1,6 +1,6 @@
 {
   "name": "hifile",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "generate markup for highlight.js file viewer",
   "main": "index.js",
   "scripts": {
@@ -44,6 +44,6 @@
   },
   "files": [
     "index.js",
-    "lib/"
+    "assets"
   ]
 }
