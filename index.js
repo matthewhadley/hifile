@@ -9,14 +9,13 @@ var exts = {
 };
 
 /* attempt to fix multiline comments by adding extra spans */
-function multiLineComments(match) {
+function multiLineComments (match) {
   var ret = match;
   var lines = match.split('\n');
   var ln = lines.length;
-  var i;
 
   if (ln > 1) {
-    for (i = 0; i < ln; i++) {
+    for (var i = 0; i < ln; i++) {
       if (i === 0) {
         ret = lines[i] + '</span>';
       } else if (i === ln) {
@@ -32,9 +31,11 @@ function multiLineComments(match) {
   return ret;
 }
 
-module.exports = function hifile(str, ext) {
-  var code, lines, col = '',
-    ln;
+module.exports = function hifile (str, ext) {
+  var code;
+  var col = '';
+  var ln;
+
   ext = exts[ext] || ext;
   try {
     if (ext) {
@@ -46,8 +47,8 @@ module.exports = function hifile(str, ext) {
     code = hl.highlightAuto(str);
   }
   code.value = code.value.replace(/<span class="comment">(.|\n)+?<\/span>/gm, multiLineComments);
-  lines = code.value.split('\n');
-  lines.forEach(function(line, i, arr) {
+  var lines = code.value.split('\n');
+  lines.forEach(function (line, i, arr) {
     ln = i + 1;
     arr[i] = '<div id="H' + ln + '" class="cl">' + arr[i] + '</div>';
     col = col + '<div id="L' + ln + '" class="ln"><a href="#L' + ln + '">' + ln + '</a></div>';
