@@ -1,10 +1,10 @@
-# hifile [![](https://travis-ci.org/diffsky/hifile.svg)](https://travis-ci.org/diffsky/hifile)
+# hifile [![](https://travis-ci.org/matthewhadley/hifile.svg)](https://travis-ci.org/matthewhadley/hifile)
 
 Generate file viewer markup for highlighted strings from [highlight.js](https://github.com/isagalaev/highlight.js)
 
-![hifile output](https://raw.githubusercontent.com/diffsky/hifile/master/example/file.png)
+![hifile output](https://raw.githubusercontent.com/matthewhadley/hifile/master/example/file.png)
 
-Live demo of example output [available on rawgit.com](https://cdn.rawgit.com/diffsky/hifile/b6488b27775794dabafa508a17ed2b4cf2f69bc2/example/hifile.html#L12).
+Live demo of example output [available on rawgit.com](https://cdn.rawgit.com/matthewhadley/hifile/b6488b27775794dabafa508a17ed2b4cf2f69bc2/example/hifile.html#L12).
 
 ## Usage
 
