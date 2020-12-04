@@ -9,7 +9,7 @@
     "example": "node example/build.js"
   },
   "dependencies": {
-    "highlight.js": "^9.12.0"
+    "highlight.js": "^10.4.1"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
